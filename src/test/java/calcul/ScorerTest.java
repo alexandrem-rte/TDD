@@ -21,4 +21,18 @@ public class ScorerTest {
         scorer.roll(5);
         assertEquals(5, scorer.getScore());
     }
+    @Test
+    public void scoreAfterTwoRoll() {
+        Scorer scorer = new Scorer();
+        scorer.roll(5);
+        scorer.roll(5);
+        assertEquals(10, scorer.getScore());
+    }
+
+    /*@Test (expected = UnvalidValueException)
+    public void scoreReturnErrorWhenUnvalidValue(){
+        Scorer scorer = new Scorer();
+        scorer.roll(-1);
+        assertEquals() Equals(, scorer.getScore());
+    }*/
 }

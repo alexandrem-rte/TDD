@@ -5,7 +5,13 @@ package calcul;
  */
 public class Scorer {
 
+    private int score = 0;
+
     public int getScore() {
-        return 0 ;
+        return score ;
+    }
+
+    public void roll(int i) {
+        score += i;
     }
 }
