@@ -1,5 +1,5 @@
 package calcul;
 
-public interface Ecran {
+public interface IEcran {
     void showMessage(String message);
 }

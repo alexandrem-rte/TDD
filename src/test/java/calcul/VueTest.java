@@ -8,7 +8,7 @@ import static org.mockito.Mockito.*;
 public class VueTest {
     @Test
     public void afficher_score_joueur(){
-        Ecran ecranMock = Mockito.mock(Ecran.class);
+        IEcran ecranMock = Mockito.mock(IEcran.class);
         Vue vue = new Vue(ecranMock);
         vue.afficherScoreJoueur(0, 66);
 
@@ -17,7 +17,7 @@ public class VueTest {
 
     @Test
     public void afficher_invite_joueur(){
-        Ecran ecranMock = Mockito.mock(Ecran.class);
+        IEcran ecranMock = Mockito.mock(IEcran.class);
         Vue vue = new Vue(ecranMock);
         vue.afficherInvite(3);
 
